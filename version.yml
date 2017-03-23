@@ -1,0 +1,9 @@
+---
+- hosts: webservers
+  sudo: yes 
+  tasks:
+    - git:
+        repo: https://github.com/henmanuel/Automatizacion.git
+        dest: /home/loopzone_org/source/
+        clone: yes
+        update: yes
